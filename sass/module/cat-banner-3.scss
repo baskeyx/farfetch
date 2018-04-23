@@ -1,0 +1,158 @@
+.banner-3 {
+  height: 200px;
+
+  .content-wrapper {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/VIP-banner-lg.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 12vw;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    p {
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      color: #fff;
+      display: none;
+      font-size:1.5vw;
+    }
+
+    .cta {
+      background: #fff;
+      color: #000;
+      text-transform: uppercase;
+    }
+  }
+
+
+  ul{
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    li{
+      height: 100%;
+      display: inline-block;
+      border-right:1px solid #ccc;
+      position: relative;
+      width:40px;
+      transition: width 1s;
+      &.selected{
+        width: 240px;
+      }
+      img{
+        position: absolute;
+        left: 40px;
+        top: 0;
+        width: 200px;
+      }
+      div{
+        height: 100%;
+        width: 40px;
+        background: #000;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+      }
+      h2{
+        transform: rotateZ(90deg);
+        font-size: 18px;
+        text-transform: uppercase;
+        transform-origin: 23% 100%;
+        letter-spacing: 2px;
+        pointer-events: none;
+      }
+    }
+  }
+
+}
+
+.large .banner-3 .content-wrapper h1{
+  font-size:6vw;
+}
+
+@media only screen
+  and (min-width:$viewportMobile+1){
+    .banner-3 .content-wrapper{
+
+      h1 {
+        font-size: 10vw;
+      }
+      .cta {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  @media only screen
+    and (min-width:$viewportTabletMini+1){
+      .banner-3 .content-wrapper{
+
+        h1 {
+          font-size: 7vw;
+        }
+        .cta {
+          font-size: 2vw;
+        }
+        ul{
+          display:block;
+        }
+      }
+    }
+
+@media only screen
+  and (min-width:$viewportTablet+1){
+    .banner-3{
+      height:280px;
+      .content-wrapper{
+        height:280px;
+        h1 {
+          font-size: 7vw;
+        }
+        p{
+          display:block;
+        }
+        .cta {
+          font-size: 2vw;
+        }
+        ul li {
+          img{
+            width:280px;
+          }
+          &.selected{
+            width: 320px;
+          }
+        }
+      }
+    }
+    .large .banner-3 .content-wrapper h1{
+      font-size:4vw;
+    }
+  }
+
+  @media only screen
+    and (min-width:$viewportLarge+1){
+      .banner-3{
+
+        .content-wrapper{
+
+
+          h1 {
+            font-size: 100px;
+          }
+          p{
+            font-size: 22px;
+          }
+          .cta {
+            font-size: 28px;
+          }
+        }
+      }
+
+    }

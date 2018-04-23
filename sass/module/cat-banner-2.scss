@@ -1,0 +1,119 @@
+.banner-2 {
+  height: 200px;
+
+  .content-wrapper {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/sale-banner-xs.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 12vw;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    p {
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      color: #000;
+      display: none;
+      font-size:1.5vw;
+    }
+
+    .cta {
+      background: #000;
+      color: #fff;
+      text-transform: uppercase;
+      &:hover{
+        background:rgba(0,0,0,0.8);
+      }
+    }
+  }
+  #scratchcard {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    margin: 20px 0;
+  }
+}
+
+.large .banner-2 .content-wrapper h1{
+  font-size:5vw;
+}
+
+@media only screen
+  and (min-width:$viewportMobile+1){
+    .banner-2 .content-wrapper{
+      background-image: url(../img/sale-banner-sm.jpg);
+      h1 {
+        font-size: 10vw;
+      }
+      .cta {
+        font-size: 3vw;
+      }
+    }
+    .large .banner-2 .content-wrapper h1{
+      font-size:4vw;
+    }
+  }
+
+  @media only screen
+    and (min-width:$viewportTabletMini+1){
+      .banner-2 .content-wrapper{
+        background-image: url(../img/sale-banner-md.jpg);
+        h1 {
+          font-size: 7vw;
+        }
+        .cta {
+          font-size: 2vw;
+        }
+      }
+      .large .banner-2 .content-wrapper h1{
+        font-size:4vw;
+      }
+    }
+
+@media only screen
+  and (min-width:$viewportTablet+1){
+    .banner-2{
+      height:280px;
+      .content-wrapper{
+        height:280px;
+        background-image: url(../img/sale-banner-lg.jpg);
+        h1 {
+          font-size: 7vw;
+        }
+        p{
+          display:block;
+        }
+        .cta {
+          font-size: 2vw;
+        }
+      }
+    }
+    .large .banner-2 .content-wrapper h1{
+      font-size:4vw;
+    }
+  }
+
+  @media only screen
+    and (min-width:$viewportLarge+1){
+      .banner-2{
+
+        .content-wrapper{
+
+
+          h1 {
+            font-size: 100px;
+          }
+          p{
+            font-size: 22px;
+          }
+          .cta {
+            font-size: 28px;
+          }
+        }
+      }
+    }
