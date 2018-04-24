@@ -23,9 +23,9 @@ gulp build
 
 ## About the build
 
-This repo contains a translations.json file, this file contains different versions once this is run a sepeerate copy of the html file is output and gulp-file-include package the translated copy for that version is inserted.
+This repo contains a translations.json file, this file contains different the different languaeg versions. Once the gulp workflow is run a seperate copy of the html file is outputed and using the gulp-file-include package the translated copy for that version is inserted.
 
-The dev build also compiles SASS, concatenates any Javascript files into a single scripts.js file and copies any images before running on localhost, any amends you make to markup, sass, translations.json or JavaScript should be visible within localhost.
+The dev build also compiles SASS, concatenates any JavaScript files into a single scripts.js file and copies any images before running on localhost, any amends you make to markup, sass, translations.json or JavaScript should be visible within localhost.
 
 The production build uses babel to convert any ES6 JavaScript to normal JavaScript before validating with Uglify and minifying. It validates the HTML markup before minifying (all language versions), it also copies any imagery and css into the dist folder.
 
