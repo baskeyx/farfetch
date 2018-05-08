@@ -23,7 +23,7 @@ gulp build
 
 ## About the build
 
-This repo contains a translations.json file, this file contains different the different languaeg versions. Once the gulp workflow is run a seperate copy of the html file is outputed and using the gulp-file-include package the translated copy for that version is inserted.
+This repo contains a translations.json file, this file contains the different language versions. Once the gulp workflow is run a seperate copy of the html file is outputed and using the gulp-file-include package the translated copy for that version is inserted.
 
 The dev build also compiles SASS, concatenates any JavaScript files into a single scripts.js file and copies any images before running on localhost, any amends you make to markup, sass, translations.json or JavaScript should be visible within localhost.
 
