@@ -8,7 +8,8 @@
     "extra": "EXTRA 20% OFF",
     "scratch": "Scratch to reveal code!",
     "code": "USE CODE: X20apr",
-    "large" : ""
+    "large" : "",
+    "test": "testing"
   },
   {
     "version": "fr",

@@ -21,17 +21,13 @@ gulp.task( 'translate' , function () {
     if (translations[i].version !== "en") {
       lang = `-${translations[i].version}`;
     }
+
+    let context = translations[i];
+
     gulp.src('*.html')
     .pipe( fileinclude({
-	  	context: {
-				title: translations[i].title,
-        subtitle: translations[i].subtitle,
-        subtitle2: translations[i].subtitle2,
-        cta: translations[i].cta,
-        extra: translations[i].extra,
-        scratch: translations[i].scratch,
-        large: translations[i].large
-      }}))
+	  	context
+    }))
     .pipe(rename({ suffix: lang }))
     .pipe(gulp.dest('dev'));
   }
